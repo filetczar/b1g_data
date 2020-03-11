@@ -46,13 +46,18 @@ def add_prob(dict, rank_df, home = None):
 
 def bracket(rank_df = rank_df, dict = head_to_head, team = None):
 	seed = int(rank_df[rank_df['team'] == team]['seed'])
+	first_round = [(11,14), (12,13)]
+	second_round =[(8,9), (11,14,6), (5,12,13), (10,7)]
+	quarters = [(1,8,9), (4,5,12,13), (2,7,10), (3,6,11,14)]
+	semis = [(1,8,9,4,5,12,13), (2,7,10,3,6,11,14)]
+	champs = [(1,8,9,4,5,12,13,2,7,10,3,6,11,14)]
 	if seed <= 4:
 		first_round = 1
 		second_round = 1
 	elif seed <= 10:
 		first_round = 1
 	if seed == 11:
-		first_round_opp = 
+		first_round_opp =
 
 
 
